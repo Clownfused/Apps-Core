@@ -173,7 +173,7 @@
     - name: Deploy Plex Container (Remote Edition)
       docker_container:
         name: plex
-        image: 'plexinc/pms-docker:{{extension.stdout}}'
+        image: 'linuxserver/plex:latest'
         pull: yes
         published_ports:
           - '{{extport}}:{{intport}}'
